@@ -1,0 +1,102 @@
+
+<!html file made by animesh>
+<!DOCTYPE html>
+<html>
+{% load static %}
+<head>
+<title>Home Page</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet"  href="{% static 'feedback/css/a.css' %}">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+
+body, html {
+  height: 100%;
+  line-height: 1.8;
+}
+
+/* Full height image header */
+.bgimg-1 {
+  background-position: center;
+  background-size: cover;
+  background-image: url("ab.jpg");
+  min-height: 100%;
+}
+
+.w3-bar .w3-button {
+  padding: 16px;
+}
+</style>
+</head>
+<body style="background-position: center;background-size: cover; background-image:url({% static 'feedback/images/images.jpeg' %});min-height: 100%;" id="home">
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-card" id="myNavbar">
+    <a href="#home" ><img src="{% static 'feedback/images/a.gif' %}" alt="logo" width="90" height="70"></a>
+    <!-- Right-sided navbar links -->
+    <div class="w3-right w3-hide-small">
+      <a href="#team" class="w3-bar-item w3-button"><i class="fa fa-user"></i> TEAM</a>
+       <a href="/student_login/login" class="w3-bar-item w3-button"><i class="fa fa-user"></i> STUDENT'S LOGIN</a>
+        <a href="/teacher_login/" class="w3-bar-item w3-button"><i class="fa fa-user"></i>TEACHER'S LOGIN</a>
+    </div>
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+
+<p style="padding: 55px 40px"></p>
+<h2 style="text-align: center; color: white;  width: 240px; padding: 10px; border: 5px black; background: rgb(21,21,21,0.35); margin: auto;"><b>beHONEST</b></h2>
+<h3 style="text-align: center; color: red"><em>-Your Opinion Matters</em></h3><br>
+<h3 style="text-align: center;">An Online Feedback Management System</h3>
+<h5 style=" text-align: center; margin-left: 9%; margin-right: 9% ">Student Feedback System for college students have been developed which aims to rate and analyse the college faculty’s performance.
+
+This type of Student Feedback system reduces, the strenuous work of physically examining the feedback pages of each and every student.
+
+The system also reduces the burden of efforts and burden of keeping and maintaining the records on a manual base, it requires a lot of space and safety to keep up such records.
+
+Also the students feedbacks can be tempered for wrong reasons in case of paper based feedbacks wherein the Student Feedback System will always ensure safety of feedbacks privacy.
+
+Another important features of the Student Feedback System is that physical presence of neither the admin nor the student is required for the either giving the feedback nor for assessing the feedback.
+
+Also further enhancement can be done and more features can be added for better retrieval of the feedback details. </h5>
+
+
+<!-- Team Section -->
+<div class="w3-container" style="padding:90px;" id="team">
+  <h3 class="w3-center">THE TEAM</h3>
+  <h4 style="text-align: center;" class="w3-center w3-large">The ones who made this website</h4>
+</div>
+<div style=" margin:auto;" centered content>
+  <div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="{% static 'feedback/images/animesh.jpg' %}" alt="animesh" style="width:100%">
+      <div class="container">
+        <h2>Anmesh Garg</h2>
+        <p>animeshgarg67@gmail.com</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="{% static 'feedback/images/naman.jpg' %}" height="480" alt="naman" style="width:100%">
+      <div class="container">
+        <h2>Naman Gupta</h2>
+        <p>namangupta9918@gmail.com</p>
+      </div>
+    </div>
+  </div>
+  </div>
+</div>
+
+<br><br>
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-24">
+  <a href="#home" class="w3-button w3-light-grey"></i>To the top</a>
+  <P>THANKS FOR VISITING  </P>
+</footer>
+</body>
+</html>

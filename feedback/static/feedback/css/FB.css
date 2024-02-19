@@ -1,0 +1,59 @@
+
+body{
+	background: url(background.jpg);
+	background-size: all;
+}
+
+body input[type="radio"]
+{
+	margin-left: 70px;
+
+
+}
+body h2{
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-left: 30%
+}
+.box{
+	width: 1300px;
+	height: 950px;
+	background: rgb(28,24,20,0.75);
+	color: #fff;
+	top: 27%;
+	left: 15%;
+	right: 15%;
+	margin-bottom: 10%;
+	position: absolute;
+	box-sizing: border-box;
+	padding: 13px 50px
+
+}
+.box p{
+	font-family: sans-serif ;
+	font-size: 20px;
+
+}
+
+.box input[type="submit"]{
+	margin: 8;
+	margin-left: 35%;
+	border: none;
+	outline: none;
+	height: 40px;
+	background: #1c8adb;
+	border-radius: 15px;
+	color: white;
+	font-size: 18px;
+	font-weight: bold;
+	text-align: center;
+	
+
+}
+.box input[type="submit"]:hover{
+	background: #39dc79;
+	color: black;
+}
+.box input[type="radio"]{
+	padding: 50px;
+}

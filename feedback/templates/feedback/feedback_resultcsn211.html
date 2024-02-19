@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+table {
+  width:100%;
+}
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+th, td {
+  padding: 15px;
+  text-align: left;
+}
+table#t01 tr:nth-child(even) {
+  background-color: #eee;
+}
+table#t01 tr:nth-child(odd) {
+ background-color: #fff;
+}
+table#t01 th {
+  background-color: black;
+  color: white;
+}
+</style>
+    <meta charset="UTF-8">
+    <title>CSN211_results</title>
+</head>
+<body>
+<h1 style="text-align: center; color: #002a80" >Results of feedback forms for Machine Learning</h1>
+
+<table id="t01">
+    <h2 style="text-align: center; color: #1b1e21">Average points in each question</h2>
+  <tr>
+    <th>Q1</th>
+    <th>Q2</th>
+    <th>Q3</th>
+       <th>Q4</th>
+    <th>Q5</th>
+    <th>Q6</th>
+       <th>Q7</th>
+    <th>Q8</th>
+  </tr>
+  <tr>
+        {% for x in list %}
+            <td> {{ x }}</td>
+    {% endfor %}
+    </tr>
+
+
+</table>
+<br>
+<h2 style="text-align: center; color: #1b1e21">All the responses of feedback form</h2>
+<table id="t01">
+  <tr>
+    <th>Q1</th>
+    <th>Q2</th>
+    <th>Q3</th>
+       <th>Q4</th>
+    <th>Q5</th>
+    <th>Q6</th>
+       <th>Q7</th>
+    <th>Q8</th>
+  </tr>
+   {% for object in objects %}
+       <tr>
+      <td>{{ object.q1 }}</td>
+       <td>{{ object.q2 }}</td>
+       <td>{{ object.q3 }}</td>
+       <td>{{ object.q4 }}</td>
+       <td>{{ object.q5 }}</td>
+       <td>{{ object.q6 }}</td>
+       <td>{{ object.q7 }}</td>
+       <td>{{ object.q8 }}</td>
+       </tr>
+      {% endfor %}
+  </tr>
+
+</table>
+<br><br>
+
+
+
+</body>
+</html>

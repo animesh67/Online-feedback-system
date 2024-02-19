@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Teacher Details</title>
+</head>
+<body>
+<h2>Details of the Teacher are</h2>
+<h3>
+    name of the Teacher  is {{ object.name}}<br>
+    sid of the Teacher is {{ object.tid }}<br>
+    Email id of the Teacher is {{ object.email_id }}<br>
+    Address of the Teacher is {{ object.address }}<br>
+</h3>
+Courses taught are: <br>
+{% for course in courses %}
+<h4>
+    <ul>
+        <li>{{ course.course_id }}</li> <a href="/feedback_result{{ course.course_id }}">See feedback result for course {{ course.course_id }}</a>
+    </ul>
+</h4>
+{% endfor %}
+</body>
+</html>

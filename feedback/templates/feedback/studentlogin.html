@@ -1,0 +1,24 @@
+<html>
+{% load static %}
+<head>
+	<title>
+		Teacher Login
+	</title>
+	<link rel="stylesheet" type="text/css" href="{% static 'feedback/css/abc.css' %}" >
+</head>
+<body>
+
+	<div class="loginbox">
+		<h1>Login Here</h1><br><br>
+	<form action="" method="POST">
+        {%  csrf_token %}
+		<p>SID</p>
+		<input type="text" name="sid" placeholder="Enter Student ID here"><br/><br/><br/>
+		<p>Password</p>
+		<input type="password" name="pass" id="password" placeholder="Enter Password here"><br/><br><br>
+		<input type="submit" name="Login" value="Login"><br><br>
+		<a href="/student_login/register/">New User? Sign up now</a>
+	</form>
+	</div>
+</body>
+</html>

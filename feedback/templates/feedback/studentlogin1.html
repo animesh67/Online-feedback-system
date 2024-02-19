@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student details</title>
+</head>
+<body bgcolor="#e9967a">
+<h1 style="text-align: center">STUDENT DETAILS</h1>
+<h2 style="text-align: center">
+    Name of the student  is {{ object.name}}<br>
+    SID of the student is {{ object.sid }}<br>
+    Branch of the student is {{ object.branch }}<br>
+    Email id of the student is {{ object.email_id }}<br>
+    Address of the student is {{ object.address }}<br>
+</h2><br>
+
+<h3 style="text-align: center"><a href="/change_password/">Change password</a></h3><br>
+<h2>Courses enrolled are: <br></h2>
+{% for course in courses %}
+<h3>
+    <ul>
+        <li>{{ course.course_id }}</li> <a href="/feedback_form{{ course.course_id }}?id={{ object.sid|urlencode }}">Open feedback form for course {{ course_course_id }}</a>
+    </ul>
+</h3>
+{% endfor %}
+</body>
+</html>
